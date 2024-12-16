@@ -1,0 +1,30 @@
+{
+    "example project": {
+        "average performance": "77%",
+        "least improved": "name 1",
+        "most improved": "name 3",
+        "team": {
+            "name 1": {
+                "performance rate": "60%",
+                "improvement": "10%",
+                "task 1": "complete",
+                "task 2": "overdue",
+                "task 3": "late"
+            },
+            "name 2": {
+                "performance rate": "79%",
+                "improvement": "19%",
+                "task 1": "complete",
+                "task 2": "overdue",
+                "task 3": "complete"
+            },
+            "name 3": {
+                "performance rate": "81%",
+                "improvement": "43%",
+                "task 1": "complete",
+                "task 2": "complete",
+                "task 3": "late"
+            }
+        }
+    }
+}

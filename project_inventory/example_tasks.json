@@ -1,0 +1,15 @@
+{
+    "project name": {
+        "name": {
+            "email": "example@gmail.com",
+            "current task": "example task",
+            "CT due date": "MM/DD",
+            "task 1": [
+                "priority",
+                "due date",
+                "estimated completion",
+                "actual completion"
+            ]
+        }
+    }
+}

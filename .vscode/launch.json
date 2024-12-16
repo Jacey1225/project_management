@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PyTest",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["-m", "pytest", "-s"],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "PyTest (selected)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": ["-m", "selected", "${file}"],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
