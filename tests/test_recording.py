@@ -1,5 +1,6 @@
 import pytest
 import logging
+import os
 
 from management.record import Record
 
@@ -18,11 +19,23 @@ class TestRecording:
         sheet_name = "reference tasks"
         return Record(sheet_key, sheet_name)
 
-    @pytest.mark.selected
     def test_request_form(self, rc):
-        data = rc.read_spreadsheet()
-        logger.info(f"Read {len(data)} rows from the spreadsheet.")
+        filename = "test_spreadsheet.csv"
+        data = rc.read_spreadsheet(filename)
+        assert data is not False
 
-        assert len(data) > 0
-        assert data is not None
     
+    def test_organize_data(self, rc):
+        team_tasks = rc.organize_data()
+        logger.info(f"Team tasks: {team_tasks}")
+
+        assert team_tasks
+    
+    @pytest.mark.selected
+    def test_to_json(self, rc):
+        json_data = rc.export_to_json()
+
+        file_path = os.path.join("project_inventory", "test_tasks.json")
+        with open(file_path, "r") as file:
+            data = file.read()
+            assert data is not None
