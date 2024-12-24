@@ -7,7 +7,6 @@ from flask.views import View
 from flask_mail import Mail, Message
 from markupsafe import Markup
 
-
 logger = logging.getLogger(__name__)
 try:
     app = Flask(__name__)
