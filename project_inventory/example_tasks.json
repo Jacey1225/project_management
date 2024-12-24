@@ -1,15 +1,29 @@
 {
     "project name": {
-        "name": {
-            "email": "example@gmail.com",
-            "current task": "example task",
-            "CT due date": "MM/DD",
-            "task 1": [
-                "priority",
-                "due date",
-                "estimated completion",
-                "actual completion"
-            ]
+        "start date": "start date",
+        "end date": "end date",
+        "mia": {
+            "email": "mia@gmail.com",
+            "current task": null,
+            "CT due date": null,
+            "task 4": {
+                "priority": "medium",
+                "due date": "01/02",
+                "estimated completion": "2",
+                "actual_completion": null
+            },
+            "task 5": {
+                "priority": "low",
+                "due date": "01/02",
+                "estimated completion": "1",
+                "actual_completion": null
+            },
+            "task 10": {
+                "priority": "medium",
+                "due date": "01/10",
+                "estimated completion": "3",
+                "actual_completion": null
+            }
         }
     }
 }

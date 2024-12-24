@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1><b>Hello, {{name}}!</b></h1>
+        <p>
+            I hope this email finds you well. This is your project manager from <b>{{project_name}}</b>. I am reaching out to request an update on the current task you are working on.
+            Could you please let me know what task you are currently focused on and if there are any updates or changes that I should be aware of?
+            <br>
+            <form action = "http://127.0.0.1:5001/record-selection" method = "POST" style = "display: inline;">
+                <input type="hidden" name="user_value" value="{{ name }}">
+                <input type="hidden" name="project_value" value="{{ project_name }}">
+                <label>Enter the task you are currently working on: <input type = "text" name = "task_value" placeholder="Enter Your Task Here:"></label>
+            </form>
+        </p>
+        <p> Thank you for your time and I look forward to hearing back from you.
+            <br>
+            <br>
+            Sincerely,<br>
+            Your Project Manager
+        </p>
+    </body>
+</html>

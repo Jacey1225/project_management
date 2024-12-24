@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1><b>Hello, {{name}}!</b></h1>
+        <form action = "http://127.0.0.1:5000/record-selection" method = "POST">
+            <p style="font-family: Arial, sans-serif; font-size: 20px;">Please click on one of the following tasks below to mark the task you are currently working on for <b>{{project_name}}</bb>: </p>
+            {% for task in task_buttons %}
+            <form action = "http://127.0.0.1:5000/record-selection" method = "POST" style = "display: inline;">
+                <input type="hidden" name="user_value" value="{{ name }}">
+                <input type="hidden" name="project_value" value="{{ project_name }}">
+                <button type = "submit" name = "task" style = "margin: 10px; padding: 10px; font-size: 16px;">{{task}}</button>
+            </form>
+            <hr>
+            {% endfor %}
+        </form>
+        <p> If you have any further questions, please email your <b>Project Manager</b> directly.</p>
+        <p><br>Sincerely,<br> Your Project Manager</p>
+    </body>
+</html>

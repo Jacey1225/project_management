@@ -1,70 +1,83 @@
 {
-    "jacey": {
-        "email": "jacey@gmail.com",
-        "current task": null,
-        "tasks": [
-            {
-                "task": "task 1",
-                "priority": "high",
-                "due date": "01/03"
+    "Test Project": {
+        "start date": "12/16/2024",
+        "end date": "01/16/2025",
+        "members": {
+            "jacey": {
+                "email": "jaceysimps@gmail.com",
+                "current task": "task 1",
+                "CT due date": "01/03",
+                "task 1": {
+                    "priority": "high",
+                    "due date": "01/03",
+                    "estimated completion": "5",
+                    "actual_completion": null
+                },
+                "task 7": {
+                    "priority": "high",
+                    "due date": "01/07",
+                    "estimated completion": "6",
+                    "actual_completion": null
+                },
+                "task 8": {
+                    "priority": "medium",
+                    "due date": "01/10",
+                    "estimated completion": "3",
+                    "actual_completion": null
+                }
             },
-            {
-                "task": "task 7",
-                "priority": "high",
-                "due date": "01/07"
+            "javin": {
+                "email": "javinkup@gmail.com",
+                "current task": null,
+                "CT due date": null,
+                "task 2": {
+                    "priority": "high",
+                    "due date": "01/05",
+                    "estimated completion": "5",
+                    "actual_completion": null
+                },
+                "task 3": {
+                    "priority": "low",
+                    "due date": "01/02",
+                    "estimated completion": "1",
+                    "actual_completion": null
+                },
+                "task 6": {
+                    "priority": "low",
+                    "due date": "01/01",
+                    "estimated completion": "2",
+                    "actual_completion": null
+                },
+                "task 9": {
+                    "priority": "medium",
+                    "due date": "01/09",
+                    "estimated completion": "4",
+                    "actual_completion": null
+                }
             },
-            {
-                "task": "task 8",
-                "priority": "medium",
-                "due date": "01/10"
+            "juliet": {
+                "email": "julietbatzorig1@gmail.com",
+                "current task": null,
+                "CT due date": null,
+                "task 4": {
+                    "priority": "medium",
+                    "due date": "01/02",
+                    "estimated completion": "2",
+                    "actual_completion": null
+                },
+                "task 5": {
+                    "priority": "low",
+                    "due date": "01/02",
+                    "estimated completion": "1",
+                    "actual_completion": null
+                },
+                "task 10": {
+                    "priority": "medium",
+                    "due date": "01/10",
+                    "estimated completion": "3",
+                    "actual_completion": null
+                }
             }
-        ]
-    },
-    "javin": {
-        "email": "javin@gmail.com",
-        "current task": null,
-        "tasks": [
-            {
-                "task": "task 2",
-                "priority": "high",
-                "due date": "01/05"
-            },
-            {
-                "task": "task 3",
-                "priority": "low",
-                "due date": "01/02"
-            },
-            {
-                "task": "task 6",
-                "priority": "low",
-                "due date": "01/01"
-            },
-            {
-                "task": "task 9",
-                "priority": "medium",
-                "due date": "01/09"
-            }
-        ]
-    },
-    "mia": {
-        "email": "mia@gmail.com",
-        "current task": null,
-        "tasks": [
-            {
-                "task": "task 4",
-                "priority": "medium",
-                "due date": "01/02"
-            },
-            {
-                "task": "task 5",
-                "priority": "low",
-                "due date": "01/02"
-            },
-            {
-                "task": "task 10",
-                "priority": "medium",
-                "due date": "01/10"
-            }
-        ]
+        }
     }
 }
