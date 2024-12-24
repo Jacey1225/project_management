@@ -8,8 +8,12 @@ from flask_mail import Mail, Message
 from markupsafe import Markup
 import time
 from datetime import datetime,timedelta
+from dotenv import load_dotenv
 
 logger = logging.getLogger(__name__)
+load_dotenv()
+MAIL_HOST = os.getenv("GMAIL_CONFIG")
+
 try:
     app = Flask(__name__)
     app.config['MAIL_SERVER'] = 'smtp.gmail.com'
@@ -17,7 +21,7 @@ try:
     app.config['MAIL_USE_TLS'] = True
     app.config['MAIL_USE_SSL'] = False
     app.config['MAIL_USERNAME'] = 'jsurvice@gmail.com'
-    app.config['MAIL_PASSWORD'] = 'ihva xisx fpzd iixb'
+    app.config['MAIL_PASSWORD'] = MAIL_HOST
 
     mail = Mail(app)
 except Exception as e:
